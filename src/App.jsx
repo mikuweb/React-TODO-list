@@ -55,7 +55,7 @@ export const App = () => {
         <button onClick={onClickAdd}>ADD</button>
       </div>
       <div className="incomplete-area">
-        <p className="title">Inconplete</p>
+        <p className="title">Incomplete</p>
         <ul>
           {incompleteTodos.map((todo, index) => {
             return (
@@ -70,9 +70,9 @@ export const App = () => {
       </div>
 
       <div className="complete-area">
-        <p className="title">Conplete</p>
+        <p className="title">Complete</p>
         <ul>
-          {completeTodos.map((todo) => {
+          {completeTodos.map((todo, index) => {
             return (
               <div key={todo} className="list-row">
                 <li>{todo}</li>
